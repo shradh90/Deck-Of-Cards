@@ -1,3 +1,14 @@
+/**
+ *Created a Program DeckOfCards.java, initialized deck of cards having suit ("Clubs",
+ * "Diamonds", "Hearts", "Spades") & Rank ("2", "3", "4", "5", "6", "7", "8", "9", "10",
+ * "Jack", "Queen", "King", "Ace"). Shuffled the cards using Random method and then
+ * distribute 9 Cards to 4 Players and Printed the Cards the received by the 4 Players
+ * using 2D Array...
+ *
+ * @author Shradha Desai
+ * @Since 21-06-2021
+*/
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -39,32 +50,24 @@ public class DeckOfCards {
 		if(n%4 ==0) {
 			i = 0;
 			player[i][k] =  cardCombo[randomSuit][randomRank];
-		//	player1.add(cardCombo[randomSuit][randomRank]);
-		//	System.out.println(cards);
 			n++;
 			k++;
 		} 
 		else if(n%4 == 1) {
 			i = 1;
 			player[i][l] =  cardCombo[randomSuit][randomRank];
-			//player2.add(cardCombo[randomSuit][randomRank]);
-		//	System.out.println(cards);
 			n++;
 			l++;
 		}
 		else if(n%4 == 2) {
 			i = 2;
 			player[i][m] =  cardCombo[randomSuit][randomRank];
-		//	player3.add(cardCombo[randomSuit][randomRank]);
-		//	System.out.println(cards);
 			n++;
 		m++;	
 		}
 		else if(n%4 == 3) {
 			i = 3;
 			player[i][o] =  cardCombo[randomSuit][randomRank];
-			// player4.add(cardCombo[randomSuit][randomRank]);
-		//	System.out.println(cards);
 			n++;
 			o++;
 		}
